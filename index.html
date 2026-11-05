@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elz Da Prynce — Official Site</title>
+<meta name="description" content="Official site of Elz Da Prynce from East New York, Brooklyn. Stream albums, watch videos and follow the music.">
+<meta property="og:title" content="Elz Da Prynce">
+<meta property="og:description" content="Stream the full catalog, watch videos, follow the music.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👑%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#120e1b;--bg2:#1a1526;--text:#f3eee4;--muted:#a59fae;--gold:#cfa84a;--line:#2d2640;--bar:#0d0a14;
+ --display:"Didot","Bodoni 72","Playfair Display",Georgia,serif;--sans:"Avenir Next","Helvetica Neue",Segoe UI,Arial,sans-serif;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf6ec;--bg2:#fff;--text:#1b1626;--muted:#6d6577;--gold:#9a7620;--line:#e6dfcf;--bar:#fff}}
+:root[data-theme="light"]{--bg:#faf6ec;--bg2:#fff;--text:#1b1626;--muted:#6d6577;--gold:#9a7620;--line:#e6dfcf;--bar:#fff}
+:root[data-theme="dark"]{--bg:#120e1b;--bg2:#1a1526;--text:#f3eee4;--muted:#a59fae;--gold:#cfa84a;--line:#2d2640;--bar:#0d0a14}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--sans);padding-bottom:96px}
+a{color:inherit}h1,h2,h3{font-family:var(--display);font-weight:400;margin:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+nav{position:sticky;top:0;z-index:20;display:flex;gap:22px;overflow-x:auto;padding:14px 20px;background:var(--bg);border-bottom:1px solid var(--line);font-size:14px}
+nav a{text-decoration:none;color:var(--muted);white-space:nowrap}nav a:hover{color:var(--gold)}
+nav a:first-child{margin-left:auto}nav a:last-child{margin-right:auto}
+section{max-width:980px;margin:0 auto;padding:64px 20px}
+h2{font-size:34px;margin-bottom:6px}.sub{color:var(--muted);margin:0 0 30px;max-width:56ch}
+.hero{text-align:center;padding:110px 20px 90px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(207,168,74,.16),transparent 70%)}
+.hero h1{font-size:clamp(46px,13vw,120px);line-height:.95;letter-spacing:.01em}
+.hero p{color:var(--muted);margin:18px 0 32px;font-size:17px}
+.btn{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font:600 14px var(--sans);background:none;cursor:pointer;margin:4px 6px 4px 0;border-radius:2px}
+.btn:hover{background:var(--gold);color:#120e1b}.btn.fill{background:var(--gold);color:#120e1b}.btn.fill:hover{filter:brightness(1.1)}
+.hero .btn{margin:4px 5px}
+.proj{display:grid;grid-template-columns:230px 1fr;gap:32px;padding:36px 0;border-top:1px solid var(--line)}
+.cover{aspect-ratio:1;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:14px;color:#fff;background:#222}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover b{position:relative;font:400 22px/1.1 var(--display);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.proj h3{font-size:30px;line-height:1.1}
+.meta{color:var(--muted);font-size:14px;margin:6px 0 16px}
+.tracks{list-style:none;margin:0 0 14px;padding:0}
+.tracks li{display:grid;grid-template-columns:28px 1fr auto auto;gap:10px;align-items:center;padding:10px 4px;border-top:1px solid var(--line);cursor:pointer}
+.tracks li:hover{background:var(--bg2)}.tracks li.on .t{color:var(--gold)}
+.tracks .t small{color:var(--muted);font-size:13px;margin-left:8px}
+.tracks .n{color:var(--muted);font-size:13px;text-align:right}.tracks .d{color:var(--muted);font-size:13px}
+.tracks a.dl{color:var(--gold);font-size:13px;text-decoration:none;border:1px solid var(--gold);padding:1px 8px;border-radius:2px}
+.on.pl .n::before{content:"♪";color:var(--gold)}.on.pl .n{font-size:0}.on.pl .n::before{font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:var(--bg2);border:1px solid var(--line);padding:18px;text-decoration:none;display:block;cursor:pointer;color:inherit;text-align:left;font:inherit;border-radius:2px}
+.card:hover{border-color:var(--gold)}.card .meta{margin:0 0 4px}.card b{font:400 21px/1.2 var(--display)}
+.soon{text-align:center;padding:56px 20px;cursor:default}.soon:hover{border-color:var(--line)}
+.soon h3{font-size:34px;margin:4px 0 8px}.soon p{color:var(--muted);margin:0 0 20px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+.row small{color:var(--muted);display:block}
+.links{display:flex;flex-wrap:wrap;gap:4px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 20px 30px;border-top:1px solid var(--line)}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bar);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none}
+#bar.show{display:block}
+.bi{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.3fr);gap:16px;align-items:center}
+.now{display:flex;gap:12px;align-items:center;min-width:0}
+#bc{width:46px;height:46px;flex:none;background-size:cover;background-position:center;background-color:var(--bg2)}
+#bt{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#ba{color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctl{display:flex;gap:6px;align-items:center}
+.ctl button{background:none;border:0;color:var(--text);font-size:20px;cursor:pointer;width:40px;height:40px;border-radius:50%}
+.ctl button:hover{color:var(--gold)}.ctl #pp{background:var(--gold);color:#120e1b;font-size:17px}.ctl #pp:hover{color:#120e1b;filter:brightness(1.1)}
+.seek{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted)}
+#rg{flex:1;accent-color:var(--gold);min-width:0}
+@media(max-width:700px){.proj{grid-template-columns:1fr}.cover{max-width:260px}.bi{grid-template-columns:minmax(0,1fr) auto}.seek{grid-column:1/-1}h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><a href="#music">Music</a><a href="#archive">Archive</a><a href="#singles">Singles</a><a href="#next">Next up</a><a href="#tour">Tour</a><a href="#videos">Videos</a><a href="#downloads">Downloads</a><a href="#bio">Bio</a><a href="#links">Follow</a></nav>
+
+<header class="hero">
+  <h1>Elz Da Prynce</h1>
+  <p>East New York, Brooklyn</p>
+  <button class="btn fill" id="shuf">Shuffle all music</button><a class="btn" href="#videos">Watch videos</a><a class="btn" href="#links">Follow</a>
+</header>
+
+<section id="music">
+  <h2>Music</h2>
+  <p class="sub">Albums and EPs. Press any track to play.</p>
+  <div id="projects"></div>
+</section>
+
+<section id="archive">
+  <h2>Mixtape archive</h2>
+  <p class="sub">The early mixtapes, released as Yung Elz. Press any track to play, or download it.</p>
+  <div id="archiveList"></div>
+</section>
+
+<section id="singles">
+  <h2>Singles</h2>
+  <p class="sub">Standout tracks from Elzavation.</p>
+  <div class="grid" id="singleGrid"></div>
+</section>
+
+<section id="next">
+  <div class="card soon">
+    <h3>New project coming soon</h3>
+    <p>Follow on your favorite platform to hear it first.</p>
+    <a class="btn fill" href="#links">Follow</a>
+  </div>
+</section>
+
+<section id="tour">
+  <h2>Tour</h2>
+  <p class="sub">Tour dates are upcoming.</p>
+  <div id="shows"></div>
+</section>
+
+<section id="videos">
+  <h2>Videos</h2>
+  <p class="sub">Official videos and live performances.</p>
+  <div class="grid" id="vids"></div>
+</section>
+
+<section id="downloads">
+  <h2>Downloads</h2>
+  <p class="sub">Every mixtape in the archive is free to download. Use the Download button next to any track.</p>
+  <div class="row"><div>Browse the mixtapes<small>Early releases as Yung Elz</small></div><a class="btn" href="#archive">Go to archive</a></div>
+  <div class="row"><div>More free mixtapes<small>On DatPiff</small></div><a class="btn" target="_blank" rel="noopener" href="https://www.datpiff.com/profile/yungelz5">Open DatPiff</a></div>
+</section>
+
+<section id="bio">
+  <h2>About</h2>
+  <p style="max-width:60ch">Elz Da Prynce is an artist from East New York, Brooklyn. His catalog runs from the L.E.U series to Libra Scale, Prynce of the East, Elzavation, Element Of Surprise, Scales &amp; Serenades and Introvert, all available to stream on every major platform.</p>
+  <p>Booking and press: <a href="mailto:yungelzmusic@gmail.com" style="color:var(--gold)">yungelzmusic@gmail.com</a></p>
+</section>
+
+<section id="links">
+  <h2>Follow</h2>
+  <p class="sub">Stream and follow everywhere.</p>
+  <div class="links" id="linkBtns"></div>
+</section>
+
+<footer><a href="mailto:yungelzmusic@gmail.com">yungelzmusic@gmail.com</a><br>© <span id="yr"></span> Elz Da Prynce. All rights reserved.</footer>
+
+<div id="bar" role="region" aria-label="Music player">
+ <div class="bi">
+  <div class="now"><div id="bc"></div><div style="min-width:0"><div id="bt"></div><div id="ba"></div></div></div>
+  <div class="ctl"><button id="pv" aria-label="Previous track">⏮</button><button id="pp" aria-label="Play or pause">▶</button><button id="nx" aria-label="Next track">⏭</button></div>
+  <div class="seek"><span id="tc">0:00</span><input type="range" id="rg" min="0" max="1000" value="0" aria-label="Seek"><span id="td">0:00</span></div>
+ </div>
+</div>
+
+<script>
+var D=[{"slug": "introvert", "title": "Introvert", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Hot", 138], ["02.m4a", "Pain 2", 245], ["03.m4a", "Dream", 164], ["04.m4a", "Cold Feet", 126], ["05.m4a", "Feelin Em", 210], ["06.m4a", "E.N.Y", 123], ["07.m4a", "IDEK Y", 144], ["08.m4a", "Homerun PT2", 202], ["09.m4a", "Call Me Up", 233], ["10.m4a", "Up Rig (feat. Breez)", 121], ["11.m4a", "Feelin Me", 162], ["12.m4a", "Luv Me", 119], ["13.m4a", "Is You Cool", 148], ["14.m4a", "Flowe (feat. Grinch)", 157], ["15.m4a", "Ina Mi (feat. Dolla)", 144], ["16.m4a", "Figured It Out", 194], ["17.m4a", "1233", 210]]}, {"slug": "scales-n-serenades", "title": "Scales & Serenades", "kind": "Album", "g": "m", "tracks": [["01.m4a", "AMEN", 162], ["02.m4a", "Edge", 88], ["03.m4a", "Funny", 211], ["04.m4a", "Gauge", 143], ["05.m4a", "Heart", 145], ["06.m4a", "I Want", 140], ["07.m4a", "In It", 174], ["08.m4a", "Lonely", 122], ["09.m4a", "Mans World", 161], ["10.m4a", "My Life", 171], ["11.m4a", "She Want It", 148]]}, {"slug": "element-of-surprise", "title": "Element Of Surprise", "kind": "EP", "g": "m", "tracks": [["01.m4a", "Take You Down", 149], ["02.m4a", "Need Me", 134], ["04.m4a", "W H O A", 158], ["05.m4a", "Perfect", 128], ["06.m4a", "Inspired", 200], ["07.m4a", "What I’m On", 144], ["08.m4a", "Get Loose", 191], ["09.m4a", "H.I.M", 151], ["10.m4a", "Distance", 149]]}, {"slug": "better-late-than-never", "title": "Better Late Than Never", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Overtime", 257], ["02.m4a", "Wont Answer", 205], ["03.m4a", "Tap In", 157], ["04.m4a", "Danger", 136], ["05.m4a", "ICON", 189], ["06.m4a", "Supposed To Feel", 177], ["07.m4a", "Ignore", 161], ["08.m4a", "Buggin Out", 133], ["09.m4a", "I Know", 187], ["10.m4a", "Trippin", 125], ["11.m4a", "Demeanor", 222], ["12.m4a", "Famous", 156], ["14.m4a", "B.L.T.N", 135]]}, {"slug": "leu-vol-3", "title": "L.E.U Vol. III", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Freestyle", 95], ["02.m4a", "Friend 2", 156], ["03.m4a", "Right Now", 134], ["04.m4a", "Change", 173], ["05.m4a", "Fucked up My Luv", 180], ["06.m4a", "Count on Me", 112], ["07.m4a", "Playa", 128], ["08.m4a", "Love at First", 178], ["09.m4a", "Matrix", 139], ["10.m4a", "Dangerous", 142], ["11.m4a", "Real Nigga Prayer", 207], ["12.m4a", "Water", 117], ["13.m4a", "Time Again (3am , Pt.2)", 118], ["15.m4a", "Wake Up", 103]]}, {"slug": "leu-vol-2", "title": "L.E.U Vol. II", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Restock", 167], ["02.m4a", "Stars", 124], ["03.m4a", "Friend", 151], ["04.m4a", "Remedy", 183], ["05.m4a", "Time", 224], ["06.m4a", "How You Feel", 208], ["07.m4a", "Overthinking", 219], ["08.m4a", "Activated", 223], ["09.m4a", "Sober", 216]]}, {"slug": "elzavation", "title": "Elzavation", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Alright", 141], ["02.m4a", "Steez", 208], ["03.m4a", "Plate", 190], ["04.m4a", "Lick/Party", 270], ["05.m4a", "No Lie", 172], ["06.m4a", "Joke", 172], ["07.m4a", "Dance", 175], ["08.m4a", "Stress", 235], ["09.m4a", "Pressure", 221], ["10.m4a", "Trend", 193], ["11.m4a", "Motion", 193], ["12.m4a", "Win", 182]]}, {"slug": "leu-vol-1", "title": "L.E.U Vol. 1", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Eye's", 208], ["02.m4a", "Honest", 153], ["03.m4a", "5:30", 185], ["05.m4a", "In da Mornin", 194], ["06.m4a", "Extendo", 156], ["07.m4a", "Gripped Up", 239], ["08.m4a", "Manifest", 155], ["09.m4a", "Understand Me", 230], ["10.m4a", "Show Me", 204], ["11.m4a", "Stop Lying", 132]]}, {"slug": "lost", "title": "L O S T", "kind": "EP", "g": "m", "tracks": [["01.m4a", "Involved", 171], ["02.m4a", "Redemption", 238], ["03.m4a", "Let You Know", 177], ["04.m4a", "Reminder", 214]]}, {"slug": "fear", "title": "Fear", "kind": "EP", "g": "m", "tracks": [["01.m4a", "Non Stop", 255], ["02.m4a", "Failures & Losses", 721], ["03.m4a", "Hold On", 209], ["04.m4a", "Ugly", 130]]}, {"slug": "prynce-of-the-east", "title": "Prynce of the East", "kind": "Album", "g": "m", "tracks": [["01.m4a", "Na Mean", 228], ["02.m4a", "Diminished", 178], ["03.m4a", "Element of Surprise", 200], ["04.m4a", "One Way", 200], ["05.m4a", "B.O.M.B", 232], ["06.m4a", "Doubts", 213], ["07.m4a", "Problem Child", 166], ["08.m4a", "Say Dat", 258], ["09.m4a", "Yung Nigga", 199], ["10.m4a", "L’s", 225], ["11.m4a", "Homerun", 255], ["12.m4a", "86’d", 162], ["13.m4a", "Poe Up", 211], ["14.m4a", "Grind", 184]]}, {"slug": "libra-scale", "title": "Libra Scale", "kind": "Album", "g": "m", "tracks": [["01.m4a", "T.T.G", 221], ["02.m4a", "Drippin", 150], ["03.m4a", "One Time", 210], ["04.m4a", "The Art of Story Telling", 227], ["05.m4a", "100 Stains (Changed Up)", 198], ["06.m4a", "Frankie Lymon", 242], ["07.m4a", "Pain", 214], ["08.m4a", "Pain 1.5", 170], ["09.m4a", "Shittin' me", 194], ["10.m4a", "So Brooklyn", 224], ["11.m4a", "Fear", 252], ["12.m4a", "Fuck Wit Me", 205], ["13.m4a", "Faith / Mind You", 170]]}, {"slug": "closer-to-my-dreams", "title": "Closer To My Dreams", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Intro", 154], ["02.m4a", "Cold As Ice", 247], ["03.m4a", "Different Girl", 218], ["04.m4a", "Love Dont Live Here", 181], ["05.m4a", "Block Fam Pt.2", 202], ["06.m4a", "Over My Dead Body", 166], ["07.m4a", "Mixed Signals Makin Love", 368], ["08.m4a", "Interlude (Venting)", 210], ["09.m4a", "Closer To My Dreams", 183], ["10.m4a", "The Ride", 237], ["11.m4a", "She A Freak", 185], ["12.m4a", "Coolin Freestyle", 164], ["13.m4a", "Wetter", 139], ["14.m4a", "My Ambition Freestyle", 177], ["15.m4a", "Girls", 192], ["16.m4a", "Bad Habits", 223], ["17.m4a", "True Tryna Steal My Swag", 284], ["18.m4a", "My Zone", 147], ["19.m4a", "No Limit", 210, "Yung Elz feat. D.N.A"], ["20.m4a", "Outro", 127]]}, {"slug": "hataz-hoez-homiez", "title": "Hataz, Hoez & Homiez", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Intro Ambition", 221], ["02.m4a", "Hataz, Hoez & Homiez", 191], ["03.m4a", "Its Alive", 194], ["04.m4a", "No Church In The Wild", 213], ["05.m4a", "Peso", 198], ["06.m4a", "Fly Boi", 115], ["07.m4a", "Cant Get Away", 211, "Yung Elz feat. Snackz"], ["08.m4a", "Its On", 224], ["09.m4a", "Lovin Ya Crew", 165], ["10.m4a", "Acapella Skit", 179], ["11.m4a", "Elzy Montana", 146], ["12.m4a", "Tonight", 231, "Yung Elz feat. D.N.A"], ["13.m4a", "Freestyle Unwritten", 174], ["14.m4a", "Glory Dedication To Daughter", 160], ["15.m4a", "Stay Schemin", 211], ["16.m4a", "Play Me Like Im Pussy", 188], ["17.m4a", "Do It For Love", 241], ["18.m4a", "Drunk Textin", 163], ["19.m4a", "Need It", 181], ["20.m4a", "NetFlix", 197], ["21.m4a", "Swag", 159], ["22.m4a", "Perfect", 257], ["23.m4a", "Outro", 111]]}, {"slug": "my-story", "title": "My Story", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Intro", 123], ["02.m4a", "My Story", 156], ["03.m4a", "Free Spirit", 174], ["04.m4a", "Block Fam", 280], ["05.m4a", "Freestyle", 121], ["06.m4a", "Letter To My Ex’s", 272], ["07.m4a", "That Way", 193], ["08.m4a", "Like Me", 192], ["09.m4a", "Interlude (Venting)", 169], ["10.m4a", "Reminiscing", 147], ["11.m4a", "Social Netwoker", 176], ["12.m4a", "Club Paradice", 197], ["13.m4a", "She Crazy", 156], ["14.m4a", "Anonomys", 148], ["15.m4a", "Slim Nigga", 146], ["16.m4a", "Whats Happnin", 145], ["17.m4a", "Successs & Failure", 252], ["18.m4a", "Outro", 50]]}, {"slug": "the-first-fantasy", "title": "The First Fantasy", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "6 Foot 7", 183], ["02.m4a", "Caniving", 180], ["03.m4a", "Casket Dip", 148], ["04.m4a", "Dream", 183], ["05.m4a", "Exhibit L", 172], ["06.m4a", "Face It", 183], ["07.m4a", "Fancy", 317], ["08.m4a", "Fear", 193], ["09.m4a", "Know This & That", 161, "Yung Elz feat. Extra"], ["10.m4a", "So Easy Freestyle", 148, "Yung Elz feat. Extra"], ["11.m4a", "Get It", 188], ["12.m4a", "Long Distance", 150], ["13.m4a", "More Than Music", 158], ["14.m4a", "So Raw", 111], ["15.m4a", "With You", 297], ["16.m4a", "Ballin", 215], ["17.m4a", "Celebrate", 243], ["18.m4a", "Hustle Hard", 123], ["19.m4a", "Leave Em Alone", 327], ["20.m4a", "Dilemma", 191], ["21.m4a", "Love Faces", 126], ["22.m4a", "Real MC", 129], ["23.m4a", "What Am i to do", 224]]}, {"slug": "sneek-peek", "title": "Sneek Peek", "kind": "Mixtape", "g": "a", "tracks": [["01.mp3", "Dilemma", 191], ["02.mp3", "Dreams Money Can Buy", 243], ["03.mp3", "East New York", 125], ["04.mp3", "Hatin", 141], ["05.mp3", "Ima Boss", 164], ["06.mp3", "Leave Em Alone", 327], ["07.mp3", "Marvins Room (Do Better)", 153], ["08.mp3", "Mixed Signals", 182], ["09.mp3", "Pain", 185], ["10.m4a", "Pusha", 73], ["11.mp3", "Racks", 122], ["12.mp3", "Real Hip Hop Shit", 191], ["13.mp3", "Rose Red", 151], ["14.mp3", "Show You", 137], ["15.mp3", "Superman", 208], ["16.mp3", "This Is My Life", 237], ["17.mp3", "Weed Rolled", 195], ["18.mp3", "Tryna Be A Gangsta", 185]]}, {"slug": "elzavation-mixtape", "title": "Elzavation (DatPiff Mixtape)", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "#RNS", 144], ["02.m4a", "Burn", 174], ["03.m4a", "Drank In My Cup", 127], ["04.m4a", "Erythang Regulah", 199], ["05.m4a", "Mercy Freestyle", 191], ["06.m4a", "Same Damn Time", 141], ["07.m4a", "SupaFly", 228], ["08.m4a", "Get Crazy Wit It", 149, "Yung Elz & Extra"], ["09.m4a", "Take It To The Head", 198, "Yung Elz & Extra"]]}, {"slug": "elzavation-2", "title": "Elzavation 2", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "King Tut Freestyle", 218], ["02.m4a", "Talk That Talk", 94], ["03.m4a", "In My Life", 249, "Yung Elz & D.N.A"], ["04.m4a", "I Dont Like Freestyle", 328], ["05.m4a", "Hallucinations", 219], ["06.m4a", "Its Okay", 217], ["07.m4a", "That Hoe", 164], ["08.m4a", "Love Me In Da Hood Freestyle", 213], ["09.m4a", "High", 129, "Yung Elz & D.N.A"], ["10.m4a", "Magic Freestyle", 204], ["11.m4a", "Presidential Freestyle", 179]]}, {"slug": "now-or-never", "title": "Now Or Never", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Now Or Never", 243], ["02.m4a", "Lame Nigga", 128], ["03.m4a", "#RNS", 130], ["04.m4a", "No New Niggas", 224], ["05.m4a", "G-Ride", 277], ["06.m4a", "I Cant Deal", 249], ["07.m4a", "Respect The Curve", 185], ["08.m4a", "Hold You Up", 239], ["09.m4a", "Old Work", 257], ["10.m4a", "Keep It Real", 235], ["11.m4a", "LIT", 139], ["12.m4a", "Aint Nobody Got Time For Dat", 262], ["13.m4a", "We Bout Dat", 183], ["14.m4a", "Turnt Up", 203], ["15.m4a", "Erythang Regulah", 200], ["16.m4a", "I Am In Brooklyn", 232], ["17.m4a", "Keep Calm", 207], ["18.m4a", "Not For Nuffin", 223], ["19.m4a", "The Vent", 233]]}, {"slug": "oktoba", "title": "Oktoba", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Been Through", 289], ["02.m4a", "Fast Lane", 170], ["03.m4a", "He Boring", 187], ["04.m4a", "Hesitate", 238], ["05.m4a", "Hot Nigga Freestyle", 138], ["06.m4a", "Its Quiet", 159], ["07.m4a", "No Flex Zone", 135], ["08.m4a", "No Wife", 183], ["09.m4a", "Oktoba", 254], ["10.m4a", "Side Bitch", 152]]}, {"slug": "libra-sound-edit", "title": "Libra Scale (Sound Edit)", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "About That Life", 281], ["02.m4a", "Aint Shit", 349], ["03.m4a", "Balanced", 361], ["04.m4a", "Cycles", 212], ["05.m4a", "Gotta Get It", 201], ["06.m4a", "Its Okay", 279], ["07.m4a", "Its Over Now", 251], ["08.m4a", "Lame Nigga", 269], ["09.m4a", "Navigation", 279], ["10.m4a", "Visions", 254]]}, {"slug": "block-fam-mixtape", "title": "Block Fam Mixtape", "kind": "Mixtape", "g": "a", "tracks": [["01.m4a", "Shmoney", 201, "Ka$hiz Royce x Xtra"], ["02.m4a", "Flexxin", 250, "Ka$hiz Royce x Yung Elz"], ["03.m4a", "Day One Niggas", 227, "Snackz Killa x Yung Elz"], ["04.m4a", "Do Dat At", 252, "SupaBadd x Queen Of Hearts x Yung Elz"], ["05.m4a", "Block Get Hot", 176, "Whoopty x Yung Elz x Ka$hiz Royce"], ["06.m4a", "Shoot Da Metal", 177, "Xtra"], ["07.m4a", "Dont Try Dat", 318, "Yung Elz & D.N.A & Snackz & Xtra"], ["08.m4a", "Does Anybody Know", 211, "Yung Elz feat. D.N.A"], ["09.m4a", "Thats A Fact", 192, "Yung Elz feat. Extra"], ["10.m4a", "Holiday Robbery", 164, "Yung Elz x FoOt 4 Mayor"], ["11.m4a", "Imma Ride", 199, "Yung Elz x Goodie"], ["12.m4a", "Make It Work", 188, "Yung Elz x Goodie"], ["13.m4a", "Lingo", 194, "Yung Elz x Handsome Balla"], ["14.m4a", "Block Fam Anthem", 206, "Yung Elz x Ka$h x Xtra"], ["15.m4a", "Bussin", 275, "Yung Elz x Ka$hiz Royce x V.I"], ["16.m4a", "Panda Mix", 244, "Yung Elz x Ka$hiz Royce"], ["17.m4a", "Don’t Bro Me", 258, "Yung Elz x Snackz"], ["18.m4a", "Damn Thang", 242, "Yung Elz x Xtra x Goodie"], ["19.m4a", "Black Roses", 233], ["20.m4a", "Block Fam", 233], ["21.m4a", "Forever Mackin", 188]]}];
+var FREE={}; /* free download list: add keys like "elzavation/04.mp3":1 to show a Download button on that track */
+var $=function(i){return document.getElementById(i)};
+var L={apple:"https://music.apple.com/us/artist/elz-da-prynce/1481791457",spotify:"https://open.spotify.com/search/Elz%20Da%20Prynce",tidal:"https://tidal.com/artist/16982767",amazon:"https://music.amazon.com/artists/B07YMV3FQZ",sc:"https://soundcloud.com/elzdaprynce",yt:"https://youtube.com/@elzdaprynceofficial",ig:"https://www.instagram.com/elz__da__prynce/",tt:"https://www.tiktok.com/@elzdaprynce",tw:"https://twitter.com/Elz_Da_Prynce",fb:"https://www.facebook.com/elzdaprynce",snap:"https://t.snapchat.com/JvAVtPDg",iheart:"https://www.iheart.com/artist/elz-da-prynce-33456642",pandora:"https://pandora.app.link/U6NwgA7hwtb",dp:"https://www.datpiff.com/profile/yungelz5",rn:"https://www.reverbnation.com/yungelz"};
+var VIDS=[["Official video","L O V E","https://youtu.be/ib_fRaUeYDQ"],["Official video","Na Mean",L.yt],["Live performance","Club House",L.yt],["Live performance","Linden Hall",L.yt]];
+var SHOWS=[]; /* add shows like ["Mar 14","Venue, City, ST","https://tickets-link"] */
+var SINGLES=["Pressure","Stress","Win","Motion","Trend"];
+var grads=["#3a1c71,#d76d77","#0f2027,#2c5364","#614385,#516395","#4b3a1a,#cfa84a","#42275a,#734b6d","#134e5e,#71b280","#1f1c2c,#928dab","#2c3e50,#4ca1af","#200122,#6f0000","#8e2de2,#4a00e0","#355c7d,#c06c84","#141e30,#243b55"];
+function fmt(s){s=Math.round(s||0);return Math.floor(s/60)+":"+("0"+s%60).slice(-2)}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var au=new Audio();au.preload="none";var Q=[],qi=-1;
+function T(ai,ti){var a=D[ai],t=a.tracks[ti];return{ai:ai,ti:ti,t:t[1],d:t[2],src:"audio/"+a.slug+"/"+t[0],slug:a.slug,album:a.title}}
+function albumQ(ai){return D[ai].tracks.map(function(_,i){return T(ai,i)})}
+function mark(){var cur=Q[qi];[].forEach.call(document.querySelectorAll(".tracks li"),function(li){var on=cur&&li.dataset.k===cur.ai+"-"+cur.ti;li.classList.toggle("on",on);li.classList.toggle("pl",on&&!au.paused)});$("pp").textContent=au.paused?"▶":"❚❚"}
+function playAt(list,i){Q=list;qi=i;var c=Q[qi];au.src=c.src;au.play().catch(function(){});
+ $("bar").classList.add("show");$("bt").textContent=c.t;$("ba").textContent="Elz Da Prynce · "+c.album;
+ $("bc").style.backgroundImage="url('covers/"+c.slug+".jpg')";$("td").textContent=fmt(c.d);
+ if("mediaSession" in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:c.t,artist:"Elz Da Prynce",album:c.album,artwork:[{src:"covers/"+c.slug+".jpg",sizes:"600x600",type:"image/jpeg"}]})}
+ mark()}
+function nextT(){if(qi<Q.length-1)playAt(Q,qi+1);else{au.pause();mark()}}
+function prevT(){if(au.currentTime>3||qi===0){au.currentTime=0}else playAt(Q,qi-1)}
+function tog(){if(qi<0)return;au.paused?au.play():au.pause()}
+$("pp").onclick=tog;$("nx").onclick=nextT;$("pv").onclick=prevT;
+au.addEventListener("play",mark);au.addEventListener("pause",mark);au.addEventListener("ended",nextT);
+au.addEventListener("timeupdate",function(){var d=au.duration||(Q[qi]&&Q[qi].d)||0;$("tc").textContent=fmt(au.currentTime);if(d){$("rg").value=Math.round(au.currentTime/d*1000);$("td").textContent=fmt(d)}});
+$("rg").oninput=function(){var d=au.duration||(Q[qi]&&Q[qi].d)||0;if(d)au.currentTime=this.value/1000*d};
+if("mediaSession" in navigator){var ms=navigator.mediaSession;ms.setActionHandler("play",tog);ms.setActionHandler("pause",tog);ms.setActionHandler("nexttrack",nextT);ms.setActionHandler("previoustrack",prevT)}
+function render(g,box){
+ D.forEach(function(a,ai){
+  if(a.g!==g)return;
+  var d=el("div","proj");d.id=a.slug;
+  var cv=el("div","cover");cv.style.background="linear-gradient(145deg,"+grads[ai%grads.length]+")";
+  var ttl=el("b","",a.title);cv.appendChild(ttl);
+  var im=new Image();im.alt=a.title+" cover";
+  im.onload=function(){ttl.style.display="none";cv.insertBefore(im,cv.firstChild)};
+  im.src="covers/"+a.slug+".jpg";
+  d.appendChild(cv);
+  var r=el("div");r.appendChild(el("h3","",a.title));
+  var tot=a.tracks.reduce(function(s,t){return s+t[2]},0);
+  r.appendChild(el("div","meta",a.kind+", "+a.tracks.length+" tracks, "+Math.round(tot/60)+" min"));
+  var b=el("button","btn fill","Play "+a.kind.toLowerCase());b.onclick=function(){playAt(albumQ(ai),0)};r.appendChild(b);
+  var ul=el("ul","tracks");ul.style.marginTop="14px";
+  a.tracks.forEach(function(t,ti){
+   var li=el("li");li.dataset.k=ai+"-"+ti;li.tabIndex=0;
+   li.appendChild(el("span","n",String(ti+1)));
+   var ts=el("span","t",t[1]);if(t[3])ts.appendChild(el("small","",t[3]));li.appendChild(ts);
+   li.appendChild(el("span","d",fmt(t[2])));
+   var key=a.slug+"/"+t[0];
+   if(a.g==="a"||FREE[key]){var dl=el("a","dl","Download");dl.href="audio/"+key;dl.setAttribute("download",a.title+" - "+t[1]+t[0].slice(t[0].lastIndexOf(".")));dl.onclick=function(e){e.stopPropagation()};li.appendChild(dl)}else li.appendChild(el("span"));
+   li.onclick=function(){playAt(albumQ(ai),ti)};li.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();li.onclick()}};
+   ul.appendChild(li)});
+  r.appendChild(ul);d.appendChild(r);box.appendChild(d)})}
+render("m",$("projects"));render("a",$("archiveList"));
+var ei=D.findIndex(function(a){return a.slug==="elzavation"});
+SINGLES.forEach(function(s){
+ var ti=D[ei].tracks.findIndex(function(t){return t[1].toLowerCase()===s.toLowerCase()});if(ti<0)return;
+ var c=el("button","card");c.appendChild(el("div","meta","Single"));c.appendChild(el("b","",D[ei].tracks[ti][1]));
+ c.appendChild(el("div","meta",fmt(D[ei].tracks[ti][2])+" · Play"));c.lastChild.style.margin="8px 0 0";
+ c.onclick=function(){playAt([T(ei,ti)],0)};$("singleGrid").appendChild(c)});
+$("shuf").onclick=function(){var all=[];D.forEach(function(a,ai){if(a.g==="m")all=all.concat(albumQ(ai))});for(var i=all.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var x=all[i];all[i]=all[j];all[j]=x}playAt(all,0)};
+if(SHOWS.length){SHOWS.forEach(function(s){var r=el("div","row");var l=el("div");l.appendChild(el("b","",s[0]));l.appendChild(el("small","",s[1]));r.appendChild(l);var a=el("a","btn","Tickets");a.href=s[2];r.appendChild(a);$("shows").appendChild(r)})}
+else{var c=el("div","card soon");c.appendChild(el("h3","","Tour dates are upcoming"));c.appendChild(el("p","","Dates and cities will be posted here. Follow on Instagram to hear first."));var a=el("a","btn fill","Follow on Instagram");a.href=L.ig;a.target="_blank";a.rel="noopener";c.appendChild(a);$("shows").appendChild(c)}
+VIDS.forEach(function(v){var a=el("a","card");a.href=v[2];a.target="_blank";a.rel="noopener";a.appendChild(el("div","meta",v[0]));a.appendChild(el("b","",v[1]));var m=el("div","meta","Watch on YouTube");m.style.margin="8px 0 0";a.appendChild(m);$("vids").appendChild(a)});
+[["Spotify",L.spotify],["Apple Music",L.apple],["Tidal",L.tidal],["Amazon Music",L.amazon],["SoundCloud",L.sc],["YouTube",L.yt],["Instagram",L.ig],["TikTok",L.tt],["X / Twitter",L.tw],["Facebook",L.fb],["Snapchat",L.snap],["iHeart",L.iheart],["Pandora",L.pandora],["DatPiff",L.dp],["ReverbNation",L.rn]].forEach(function(f){var a=el("a","btn",f[0]);a.href=f[1];a.target="_blank";a.rel="noopener";$("linkBtns").appendChild(a)});
+$("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
